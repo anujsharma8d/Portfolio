@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('/fonts/GoogleSans-Medium.ttf') format('truetype');
+  font-weight: 500 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url('/fonts/GoogleSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-spartan: 'League Spartan', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-hero: 'League Spartan', 'Anton', 'Bebas Neue', Impact, sans-serif;
+  --font-sans: 'League Spartan', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-google-sans: 'Google Sans', 'Product Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-hero-red: #b81520;
+  --color-nav-blue: #4d73b8;
+
+  --animate-star-rotate: starRotate 12s linear infinite;
+  --animate-scroll-pulse: scrollPulse 2.2s ease-in-out infinite;
+
+  @keyframes starRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(0.9); }
+    50% { opacity: 0.9; transform: scaleY(1.1); }
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: clip;
+  background-color: #161614;
+  color: #fff;
+  font-family: var(--font-sans);
+}
+
+.font-hero {
+  font-family: var(--font-hero);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+}
+
+.font-google-sans {
+  font-family: 'Google Sans', 'Product Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 32s linear infinite;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Custom slim scrollbar for project details */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.04);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #900610;
+}
+
+

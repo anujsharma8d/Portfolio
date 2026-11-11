@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" >
+  <defs>
+    <linearGradient id="bgObsidian2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18191E" />
+      <stop offset="100%" stop-color="#08080A" />
+    </linearGradient>
+    <linearGradient id="crimsonGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2438" />
+      <stop offset="100%" stop-color="#9E0713" />
+    </linearGradient>
+  </defs>
+
+  <rect x="14" y="14" width="484" height="484" rx="120" fill="url(#bgObsidian2)" stroke="#2B2D37" stroke-width="14" />
+
+  <g transform="translate(68, 385) scale(0.35, -0.35)">
+    <path d="M285 716H410L681 0H560L494 184H202L136 0H15ZM458 286 378 505 351 587H345L318 505L238 286Z" fill="#FFFFFF" />
+    <path d="M30 182 134 224Q150 164 191.0 126.0Q232 88 290 88Q344 88 381.5 116.0Q419 144 419 193Q419 238 386.0 267.5Q353 297 272 325L227 341Q154 367 105.5 413.5Q57 460 57 537Q57 590 85.5 635.0Q114 680 165.5 706.0Q217 732 282 732Q375 732 431.0 686.5Q487 641 507 584L408 542Q398 578 366.0 604.0Q334 630 283 630Q234 630 200.0 604.0Q166 578 166 538Q166 501 196.5 476.5Q227 452 291 430L337 414Q429 382 479.0 331.0Q529 280 529 195Q529 125 493.5 77.5Q458 30 402.5 7.0Q347 -16 289 -16Q200 -16 129.0 36.0Q58 88 30 182Z" transform="translate(580, 0)" fill="url(#crimsonGrad2)" />
+  </g>
+</svg>
